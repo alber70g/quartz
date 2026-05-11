@@ -8,16 +8,23 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Albert Notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "notes.local.co",
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "CLAUDE.md",
+      "**/CLAUDE.md",
+      "_backlinks.json",
+      "_absorb_log.json",
+      "*.json",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
